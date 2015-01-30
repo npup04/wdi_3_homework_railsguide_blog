@@ -1,0 +1,9 @@
+<h1>Categories of Articles</h1>
+
+<p>
+<% @categories.each do |category| %>
+  <%=  category.name %><br>
+<% end %>
+</p>
+
+<%= link_to 'Back', articles_path %>
